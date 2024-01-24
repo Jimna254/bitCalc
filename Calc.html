@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="maincontainer">
+      <h1
+        style="
+          display: flex;
+          color: #fff;
+          align-items: center;
+          justify-content: center;
+        "
+      >
+        Bitcalc
+      </h1>
+      <div class="keyboard">
+        <input type="text" id="input" />
+
+        <div class="keys">
+          <button class="value" onclick="calculator.appendToInput('1')">
+            1
+          </button>
+          <button class="value" onclick="calculator.appendToInput('2')">
+            2
+          </button>
+          <button class="value" onclick="calculator.appendToInput('3')">
+            3
+          </button>
+          <button class="value" onclick="calculator.appendToInput('4')">
+            4
+          </button>
+          <button class="value" onclick="calculator.appendToInput('5')">
+            5
+          </button>
+          <button class="value" onclick="calculator.appendToInput('6')">
+            6
+          </button>
+          <button class="value" onclick="calculator.appendToInput('7')">
+            7
+          </button>
+          <button class="value" onclick="calculator.appendToInput('8')">
+            8
+          </button>
+          <button class="value" onclick="calculator.appendToInput('9')">
+            9
+          </button>
+          <button class="value" onclick="calculator.appendToInput('0')">
+            0
+          </button>
+          <button
+            class="value"
+            style="font-weight: bold"
+            onclick="calculator.appendToInput('.')"
+          >
+            .
+          </button>
+          <button class="value" onclick="calculator.appendToInput('+')">
+            +
+          </button>
+          <button class="value" onclick="calculator.appendToInput('-')">
+            -
+          </button>
+          <button class="value" onclick="calculator.appendToInput('*')">
+            *
+          </button>
+          <button class="value" onclick="calculator.appendToInput('/')">
+            /
+          </button>
+
+          <button class="value" onclick="calculator.calculateResult()">
+            =
+          </button>
+          <button
+            class="value"
+            onclick="calculator.removeLast()"
+            style="background-color: brown; color: #fff"
+          >
+            DEL
+          </button>
+
+          <button
+            class="value"
+            onclick="calculator.clearInput()"
+            style="background-color: orangered; color: white"
+          >
+            AC
+          </button>
+
+          <button
+            class="value"
+            onclick="calculator.returnAns()"
+            style="background-color: aqua"
+          >
+            ANS
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="calc.js"></script>
+  </body>
+</html>
